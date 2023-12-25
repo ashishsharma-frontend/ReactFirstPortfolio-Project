@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skills-full-contain{
+    background-color: #212121;
+
+}
+
+.skills-full-contain .skills-main-title h1{
+    color: #fff;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.skills-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.skills-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.5);
+  }
+  
+  .icons-container {
+    margin-top: 20px;
+  }
+
+.skills-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 380px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-top-left-radius: 25PX;
+    border-bottom-right-radius: 25PX;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    border: 10px solid #E6FFFD;
+}
+
+.skills-card:hover {
+    height: 400px;
+}
+
+.skills-card .skills-img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-top-left-radius: 25PX;
+    border-bottom-right-radius: 25PX;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 10px solid #D61355;
+}
+
+.skills-card:hover .skills-img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card .skills-img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skills-card .skills-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skills-card:hover .skills-content {
+    top: 150px;
+    height: 250px;
+}
+
+.skills-card .skills-content h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #FF6969;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.skills-card .skills-content p {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 480px) {
+    .skills-card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .skills-card .skills-img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .skills-card .skills-content p {
+        font-size: 1rem;
+    }
+
+}

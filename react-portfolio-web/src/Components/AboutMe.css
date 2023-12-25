@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=IBM+Plex+Mono:wght@300;400&family=Monoton&family=Montserrat+Alternates:wght@600&family=Open+Sans:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:wght@400;500&family=Reggae+One&family=Roboto:wght@400;500;700;900&family=Rubik+Dirt&family=Rubik+Mono+One&display=swap');
+
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.about-main-title h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.about-me-card {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.about-me-img {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-me-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.about-me-content {
+  align-self: center;
+  text-align: center;
+  padding: 40px;
+  flex: 2;
+}
+
+.second-title h2 {
+  font-family: 'Reggae One', cursive;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-title h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.main-title span {
+  color: #ff4d4d;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 30px;
+}
+
+.about-description p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Add any additional styles or modifications as needed */
+
+@media (max-width: 1198px) {
+  .about-me-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

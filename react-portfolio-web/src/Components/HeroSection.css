@@ -1,0 +1,288 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=IBM+Plex+Mono:wght@300;400&family=Montserrat+Alternates:wght@600&family=Noto+Sans+Display:wght@200&family=Nova+Oval&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Pacifico&family=Playfair+Display:wght@400;500&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500;700;900&family=Rowdies&family=Rubik+Mono+One&display=swap');
+
+/* Resetting box model and setting global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* HTML Styles */
+html {
+  font-size: 70.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #E3F6FF;
+  border-radius: 5rem;
+}
+
+/* Styling the main container */
+.container {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #FFF7F3;
+  background-image: linear-gradient(#212121 50%, #FFF7F3 50%);
+  padding: 20px;
+}
+
+/* Styling the title within the container */
+.container .title img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+/* Styling the big card section */
+.big-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* Styling the first title */
+.first-title .title {
+  font-size: 40px;
+  padding-top: 20px;
+  color: #FFF7F3;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Styling the main heading */
+.main-heading {
+  color: #FFF7F3;
+}
+
+/* Styling the arrow image */
+.arrow img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: transform 0.9s ease, filter 0.5s ease;
+}
+
+.arrow img:hover {
+  transform: rotate(360deg);
+  filter: hue-rotate(180deg);
+}
+
+
+/* Styling the first card */
+.first-card {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 15px;
+  background: #FFF7F3;
+  border: 10px solid #E3F6FF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+
+/* Styling the content within the first card */
+.content {
+  padding: 20px;
+  margin-top: -40px;
+}
+
+/* Styling the card title */
+.card-title {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* Styling the card title image */
+.card-title img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Styling the name */
+.name {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* Styling the name span */
+.name span {
+  color: #FF6969;
+}
+
+.name span:hover{
+  color: #A7727D;
+  transition: all ease 0.50s;
+  font: bold;
+}
+
+/* Styling the description */
+.description {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+/* Styling the button */
+.button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: transparent;
+  background-color: #212121;
+  color: #E3F6FF;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-top: 3px solid #FF6969;
+  border-bottom: 3px solid #FFD966;
+}
+
+/* Styling the button hover state */
+.button:hover {
+  background-color: transparent;
+  transition: all ease 0.5s;
+  color: #212121;
+}
+
+/* Styling the image within the second card */
+.second-card img {
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+  border-radius: 8px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 10px solid #E3F6FF;
+  transition: all ease 0.50s;
+}
+
+.second-card img:hover {
+  filter: grayscale(100%);
+  transition: all ease 0.50s;
+}
+
+/* Styling the small card container */
+.small-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 60px;
+}
+
+/* Styling the small card */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 10px solid #E3F6FF;
+  background: linear-gradient(to right, #F5F5F5, #F5F5F5);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0.6rem 0.6rem 0rem rgb(39, 39, 39);
+  border: 4px solid rgb(39, 39, 39);
+  margin-bottom: 20px;
+}
+
+/* Styling the small card image */
+.small-card-image {
+  width: 80px;
+  height: auto;
+  transition: all ease 0.40s;
+}
+
+.small-card-image:hover{
+  scale: 1.2;
+  transition: all ease 0.40s;
+}
+
+/* Media queries for responsive design */
+
+/* Adjustments for max-width 768px */
+@media (max-width: 768px) {
+  .first-card {
+    margin: 0px;
+  }
+
+  .second-card img {
+    margin-top: 40px;
+  }
+
+  .arrow img {
+    margin-bottom: 20px;
+  }
+
+  .card:nth-child(1) {
+    margin-bottom: -20px;
+  }
+
+  .card:nth-child(2) {
+    margin-bottom: -20px;
+  }
+
+  .small-card-image {
+    width: 55px;
+    height: auto;
+  }
+}
+
+/* Adjustments for max-width 516px */
+@media (max-width: 516px) {
+  .container .title img {
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+}
+
+/* Adjustments for max-width 1459px */
+@media (max-width: 1459px) {
+  .big-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+  .second-card img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .container {
+    background-color: #FFF7F3;
+    background-image: linear-gradient(#212121 65%, #FFF7F3 35%);
+  }
+}
